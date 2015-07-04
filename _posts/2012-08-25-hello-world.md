@@ -2,24 +2,11 @@
 layout: default
 title: 你好，世界
 ---
+<html>
+<body>
 
-# 让GitHub Pages博客支持百度搜索引擎收录
+<img src="http://7xk35i.com1.z0.glb.clouddn.com/dnspod-dns.jpg"  alt="上海鲜花港 - 郁金香" />
 
-
-![](http://7xk35i.com1.z0.glb.clouddn.com/dnspod-dns.jpg)
-
-
-
-![](http://7xk35i.com1.z0.glb.clouddn.com/dnspod-dns.jpg)
-
-
-
-
-![](http://7xk35i.com1.z0.glb.clouddn.com/dnspod-dns.jpg)
-
-
-
-
-![](http://7xk35i.com1.z0.glb.clouddn.com/dnspod-dns.jpg)
-
+</body>
+</html>
 
