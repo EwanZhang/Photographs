@@ -32,7 +32,7 @@
 	</body>
 	
 <ul>
-	<img src="{{ site.baseurl }}{{ post.url }}"></img>
+	{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
 </ul>
 
 </html>
