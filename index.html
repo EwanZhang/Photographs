@@ -34,10 +34,9 @@
 <ul>
 　　{% for post in site.posts %}
 　  <img src="{ site.baseurl }">{{ post.title }}</img>
-　  <img src=" {site.baseurl} " />
-　  <img src=" site.baseurl " />
-　  <img src="{ site.baseurl }" />
-　  <img src=" {site.baseurl} "/>
+　  <img src=" {{ post.title }}" />
+　  
+
 　  
 　  <img src=" http://www.w3school.com.cn/i/eg_tulip.jpg" />
 　　{% endfor %}
