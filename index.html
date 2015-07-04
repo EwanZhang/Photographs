@@ -30,16 +30,13 @@
 			</ul>
 		</nav>
 	</body>
-	
-<p>
-　　{% for post in site.posts %}
-　　<p1>
-　  <img src=" {{ post.title }}" />
-　  </p1>
-　  <p2>
-　  {{ post.tags }}
-　　{% endfor %}
-　　</p2>
-</p>
+{% for post in site.posts %}	
+	<a>
+		<img src=" {{ post.title }}" />
+	</a>
+	<p> 
+		{{ post.tags }} 
+	</p>	
+{% endfor %}
 
 </html>
