@@ -1,34 +1,11 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset=utf-8 />
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>Photographs</title>
-		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
-		<link href='examples/styles.css' rel='stylesheet' type='text/css'>
-		<link href="https://raw.githubusercontent.com/ResponsiveImagesCG/responsiveimages.org/master/img/favicon.ico" rel="icon">
-		<script>
-			// Picture element HTML shim|v it for old IE (pairs with Picturefill.js)
-			document.createElement( "picture" );
-		</script>
-		<script async="true" src="dist/picturefill.js"></script>
-	</head>
-	<body>
-		<a href="http://responsiveimages.org/" class="ricg"><img src="http://ww1.sinaimg.cn/large/72185833gw1etqmx4xzu5j20eb0ceaa4.jpg" alt="Responsive Issues Community Group"></a>
-		<h1>一些平时拍的照片</h1>
-
-		<nav>
-			<ul class="nav">
-				<li><a href=wanzhang.github.io>Bolg</a></li>
-				<li><a href=" ">Photographs</a></li>
-			</ul>
-		</nav>
-		<p>
-			post in site.posts %}
-			<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-			{% endfor %}
-		</p>
-	</body>
-</html>
-
+　---
+　　layout: default
+　　title: 我的Blog
+　　---
+　　<h2>{{ page.title }}</h2>
+　　<p>最新文章</p>
+　　<ul>
+　　　　{% for post in site.posts %}
+　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　{% endfor %}
+　　</ul>
