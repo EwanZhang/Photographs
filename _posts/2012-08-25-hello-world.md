@@ -1,5 +1,5 @@
 ---
 layout: default
-title: xk35i.com1.z0.glb.clouddn.com/dnspod-dns.jpg
+title: http://www.w3school.com.cn/i/eg_tulip.jpg
 ---
 
