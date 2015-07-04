@@ -32,15 +32,8 @@
 	</body>
 	
 <ul>
-　　{% for post in site.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}		
-        </h2>
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:900 }}
-        </div>
-    </a>
-　　{% endfor %}
+	<img src="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</img>
+	<img src="http://7xk35i.com1.z0.glb.clouddn.com/dnspod-dns.jpg">{{ post.title }}</img>
 </ul>
 
 </html>
