@@ -1,5 +1,5 @@
 ---
 layout: default
-title: 你好，世界
+title: http://www.w3school.com.cn/i/eg_tulip.jpg
 ---
 
