@@ -3,7 +3,7 @@
  title: 风光
 ---
 
-<p>
+
 {% for tag in site.tags %}
 		<div class="one-tag-list">
 		  	<span class="fa fa-tag listing-seperator" id="郁金香">郁金香</span>
@@ -11,9 +11,8 @@
 			  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
 			  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 			  </li> -->
-			 <div class="post-preview">
-			    <img src=" {{ post.title }}" />
-			</div>
+			    <img src=" {{ post.title }}" >
+			</img>
 			{% endfor %}
 		</div>
 {% endfor %}
@@ -49,5 +48,3 @@
     <span class="next disabled" >后页></span>
   {% endif %}
   (共{{ paginator.total_Landscape }}篇)
-
-</p>
