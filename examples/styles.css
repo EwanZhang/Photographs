@@ -90,7 +90,7 @@ p code {
     }
     .nav li {
         display: table-cell;
-        width: 50%;
+        width: 20%;
         padding: 0;
         border: 0;
         font-size: 1em;
