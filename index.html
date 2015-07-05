@@ -34,8 +34,6 @@
 	</p>	
 {% endfor %}
 
-<section class="post">
-<div id="post-pagination" class="paginator">
 
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
@@ -67,8 +65,5 @@
     <span class="next disabled" >后页></span>
   {% endif %}
   (共{{ paginator.total_posts }}篇)
-  {% if page.comments %}
-{% include comments.md %}
-{% endif %}
 </div>
 
