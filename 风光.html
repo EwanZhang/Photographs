@@ -6,9 +6,8 @@
 
 <!-- 标签列表 -->
 			{% for tag in site.tags %}
-			<div class="one-tag-list">
 			  	<span class="fa fa-tag listing-seperator"" id="郁金香"> 郁金香 </span>
-				{% for post in tag 郁金香 %}
+				{% for post in tag tag[1] %}
 				 <div class="post-preview">
 				     <a>
 				        <img src=" {{ post.title }}" />
@@ -17,7 +16,6 @@
 				    </a>
 				</div>
 				{% endfor %}
-			</div>
 			{% endfor %}
 
 
