@@ -6,7 +6,7 @@
 
 {% for tag in site.tags %}
 		<div class="one-tag-list">
-		  	<span class="fa fa-tag listing-seperator" id="郁金香">郁金香</span>
+                        {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
 			  <!-- <li class="listing-item">
 			  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
 			  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
