@@ -8,9 +8,9 @@
 			{% for tag in site.tags %}
 			<div class="one-tag-list">
 			  	<span class="fa fa-tag listing-seperator" id="郁金香"> 郁金香 </span>
-				{% for post in tag %}
+				{% for post in tag[1] %}
 				 <div class="post-preview">
-				     <a href="{{ post.url | prepend: site.baseurl }}">
+				     <a>
 				        <img src=" {{ post.title }}" />
 				        {% if post.subtitle %}
 				        {% endif %}
