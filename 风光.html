@@ -7,7 +7,7 @@
 <!-- 标签列表 -->
 			{% for tag in site.tags %}
 			<div class="one-tag-list">
-			  	<span class="fa fa-tag listing-seperator" id="郁金香"> 郁金香 </span>
+			  	<span class=" " id="郁金香"> 郁金香 </span>
 				{% for post in tag[1] %}
 				 <div class="post-preview">
 				     <a>
@@ -15,7 +15,6 @@
 				        {% if post.subtitle %}
 				        {% endif %}
 				    </a>
-				    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
 				</div>
 				<hr>
 				{% endfor %}
