@@ -220,6 +220,30 @@ a {
     padding: 2rem 1rem;
     font-size: 1rem; } }
 
+.paginator {
+font: 14px Arial,Helvetica,sans-serif;
+color: #AAA;
+margin: 20px 0;
+line-height: 150%;
+display: block;
+}
+
+.paginator a,.paginator span{
+padding: 0 4px;
+margin: 2px;
+text-decoration: none;
+}
+
+.paginator .current-page {
+color: white;
+background: #B9221F;
+}
+
+.paginator a:hover{
+color: white;
+background: #83BF73;
+}
+
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
