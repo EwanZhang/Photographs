@@ -1,0 +1,69 @@
+---
+ layout: default
+ title: 风光
+---
+
+<head>
+	<meta charset=utf-8 />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Photographs</title>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
+	<link href='examples/styles.css' rel='stylesheet' type='text/css'>
+	<link href="favicon.ico" rel="icon">
+</head>
+<body>
+	<a href="http://ewanzhang.github.io/Photographs" class="ricg"><img src="http://ww1.sinaimg.cn/large/72185833gw1etqmx4xzu5j20eb0ceaa4.jpg" alt="Responsive Issues Community Group"></a>
+	<h1>一些平时拍的照片</h1>
+
+	<nav>
+		<ul class="nav">
+			<li><a href="http://ewanzhang.github.io">Bolg</a></li>
+			<li><a href=" ">Photographs</a></li>
+		</ul>
+	</nav>
+</body>
+<br/>
+<br/>
+{% for post in site.posts %}	
+	<p>
+		<img src=" {{ post.title }}" />
+	</p>
+	<p> 
+		{{ post.tags }} 
+	</p>	
+{% endfor %}
+
+
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a href="/Photographs"><前页</a>
+    {% else %}
+    <a href="/page{{paginator.previous_page}}"><前页</a>
+    {% endif %}
+  {% else %}
+    <span class="previous disabled"><前页</span>
+  {% endif %}
+
+      {% if paginator.page == 1 %}
+      <span class="current-page">1</span>
+      {% else %}
+      <a href="/Photographs">1</a>
+      {% endif %}
+
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+      <span class="current-page">{{count}}</span>
+      {% else %}
+      <a href="/page{{count}}">{{count}}</a>
+      {% endif %}
+    {% endfor %}
+
+  {% if paginator.next_page %}
+    <a class="next" href="/page{{paginator.next_page}}">后页></a>
+  {% else %}
+    <span class="next disabled" >后页></span>
+  {% endif %}
+  (共{{ paginator.total_posts }}篇)
+</div>
+
