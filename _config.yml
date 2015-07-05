@@ -3,4 +3,4 @@ permalink: /:year/:month/:title/
 url: http://EwanZhang.github.io/Photographs
 author: Ewan Zhang
 pygments: true
-paginate: 2
+paginate: 5
