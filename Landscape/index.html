@@ -1,44 +1,24 @@
----
- layout: default
- title: 风光
----
-{% for post in site.categories.Landscape %}
-	<p>
-		<img src=" {{ post.title }}" />
-	</p>
-	<p> 
-		{{ post.tags }} 
-	</p>	
-{% endfor %}
+<div class="index-content opinion">
+    <div class="section">
+        <ul class="artical-cate">
+            <li><a href="/"><span>Blog</span></a></li>
+            <li class="on" style="text-align:center"><a href="/opinion"><span>Opinion</span></a></li>
+            <li style="text-align:right"><a href="/project"><span>Project</span></a></li>
+        </ul>
 
+        <div class="cate-bar"><span id="cateBar"></span></div>
 
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-    <a href="/Photographs"><前页</a>
-    {% else %}
-    <a href="/page{{paginator.previous_page}}"><前页</a>
-    {% endif %}
-  {% else %}
-    <span class="previous disabled"><前页</span>
-  {% endif %}
-
-      {% if paginator.page == 1 %}
-      <span class="current-page">1</span>
-      {% else %}
-      <a href="/Photographs">1</a>
-      {% endif %}
-
-    {% for count in (2..paginator.total_pages) %}
-      {% if count == paginator.page %}
-      <span class="current-page">{{count}}</span>
-      {% else %}
-      <a href="/page{{count}}">{{count}}</a>
-      {% endif %}
-    {% endfor %}
-
-  {% if paginator.next_page %}
-    <a class="next" href="/page{{paginator.next_page}}">后页></a>
-  {% else %}
-    <span class="next disabled" >后页></span>
-  {% endif %}
-  (共{{ paginator.total_posts }}篇)
+        <ul class="artical-list">
+        {% for post in site.categories.Landscape %}
+            <li>
+                <h2>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </h2>
+                <div class="title-desc">{{ post.description }}</div>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div class="aside">
+    </div>
+</div>
