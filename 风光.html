@@ -2,11 +2,15 @@
  layout: default
  title: 风光
 ---
+{% for post in site.categories.Landscape %}
+	<p>
+		<img src=" {{ post.title }}" />
+	</p>
+	<p> 
+		{{ post.tags }} 
+	</p>	
+{% endfor %}
 
-  {% for post in site.categories.Landscape %}
-   <h2><img src=" {{ post.title }}" /></h2>
-   {{ post.tags }}
-  {% endfor %}
 
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
