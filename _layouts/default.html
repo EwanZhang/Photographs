@@ -29,6 +29,9 @@
 
 　　{{ content }}
 
+<div>
+<span style="float:left">
+<a>
 
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
@@ -60,9 +63,13 @@
     <span class="next disabled" >后页></span>
   {% endif %}
   (共{{ paginator.total_posts }}篇)
-	<div style="text-align:right;">
-  	<a href="http://www.ewanzhang.com" target="_blank">返回博客</a>
-	</div>
+
+</a>
+</span>
+<span style="float:right">
+<a href="http://www.ewanzhang.com" target="_blank">返回博客</a>
+</span>
+</div>
 
 </body>
 
