@@ -3,13 +3,11 @@
  title: 风光
 ---
 
-{% for post in site.fengguang %}	
-	<p>
-		<img src=" {{ post.title }}" />
-	</p>
-	<p> 
-		{{ post.tags }} 
-	</p>	
+{% for post in site.categories.风光 %}
+    <li>
+        <h2><img src=" {{ post.title }}" /></h2>
+        <div class="title-desc">{{ post.tags }}</div>
+    </li>
 {% endfor %}
 
 
