@@ -2,12 +2,12 @@
  layout: default
  title: 风光
 ---
-
-{% for post in site.categories.风光 %}
-  <h2><img src=" {{ post.title }}" /></h2>
-  {{ post.tags }}
-{% endfor %}
-
+<ul class="artical-list">
+  {% for post in site.categories.fengguang %}
+   <h2><img src=" {{ post.title }}" /></h2>
+   {{ post.tags }}
+  {% endfor %}
+</ul>
 
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
