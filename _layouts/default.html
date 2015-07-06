@@ -29,8 +29,7 @@
 
 　　{{ content }}
 
-<div>
-<span>
+
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
     <a href="/Photographs"><前页</a>
@@ -61,12 +60,9 @@
     <span class="next disabled" >后页></span>
   {% endif %}
   (共{{ paginator.total_posts }}篇)
-</span>
-<span style="text-align:right;">
-  	<a href="http://www.ewanzhang.com" target="_blank">返回2博客</a>
-</span>
-
-</div>
+	<span style="text-align:right;">
+  	<a href="http://www.ewanzhang.com" target="_blank">返回博客</a>
+	</span>
 
 </body>
 
