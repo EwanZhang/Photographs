@@ -1,0 +1,14 @@
+---
+ layout: default
+ title: Landscape
+---
+
+
+{% for post in site.tags.郁金香1 %}	
+	<p>
+		<img src=" {{ post.title }}" />
+	</p>
+	<p> 
+		{{ post.tags }} 
+	</p>	
+{% endfor %}
