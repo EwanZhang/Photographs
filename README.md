@@ -1,1 +1,1 @@
-http://ewanzhang.github.io/Photographs/
+www.ewanzhang.com/Photographs
